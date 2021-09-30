@@ -1,0 +1,9 @@
+.container {
+  max-width: $width-desktop;
+  margin: 0 auto;
+  padding: 0 $offset-desktop;
+
+  &--big {
+    max-width: 1480px;
+  }
+}

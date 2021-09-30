@@ -1,0 +1,20 @@
+.page-header {
+  position: absolute;
+
+  width: 100%;
+  padding: 33px 0;
+}
+
+.page-header__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.page-header__nav {
+  margin-left: auto;
+}
+
+.page-header__call {
+  margin-left: 50px;
+}

@@ -1,0 +1,30 @@
+.button {
+  display: inline-block;
+  padding: 14px 24px;
+
+  color: $accent;
+  font-family: $font-family-title;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+
+  border: 1px solid $accent;
+  border-radius: $radius;
+}
+
+.button--white {
+  color: $white;
+
+  border: 1px solid $white;
+}
+
+.button--fill {
+  color: $white;
+
+  background-color: $accent;
+  border: none;
+}

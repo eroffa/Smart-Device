@@ -1,0 +1,20 @@
+// Настройки
+@import "core/helpers/variables";
+@import "core/helpers/mixins";
+
+// Библиотеки
+@import "node_modules/normalize.css/normalize";
+
+// Базовые стили
+@import "core/base/font";
+@import "core/base/base";
+@import "core/base/container";
+
+// Элементы
+@import "scaffolds/components/button";
+@import "scaffolds/components/logo";
+@import "scaffolds/components/nav";
+
+// Секции
+@import "scaffolds/sections/page-header";
+@import "scaffolds/sections/page-promo";

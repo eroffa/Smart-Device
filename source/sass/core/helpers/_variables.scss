@@ -1,0 +1,35 @@
+// Цвета
+$accent: #00b2ff;
+$black: #1b2d37;
+$text: #666666;
+$white: #ffffff;
+
+// Типографика
+$font-family-title: "Roboto Condensed", "Trebuchet MS", sans-serif;
+$font-family-text: "PT Mono", "Georgia", sans;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+// Отступы
+$offset-desktop: 35px;
+$offset-tablet: 25px;
+$offset-mobile: 15px;
+
+// Breakpoint
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// Размеры контейнера
+$width-mobile: 320px + $offset-tablet * 2;
+$width-tablet: 768px + $offset-tablet * 2;
+$width-desktop: 1170px + $offset-desktop * 2;
+
+// Ретина
+$dpi: 144dpi;
+$dppx: 1.5dppx;
+
+// Разное
+$radius: 5px;
+$transition: all 0.3s ease;
+$box-shadow: 0 0 0 $white;

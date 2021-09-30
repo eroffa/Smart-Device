@@ -1,0 +1,16 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin font-face($font-family, $url, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: "#{$font-family}";
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+    src: url("#{$url}.woff2") format("woff2"), url("#{$url}.woff") format("woff");
+  }
+}

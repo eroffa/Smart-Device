@@ -1,0 +1,93 @@
+.page-promo {
+  padding: 320px 0 275px;
+
+  color: $white;
+
+  background: $black url("../img/desktop/header-bg-desktop@1x.png") no-repeat;
+  background-size: 100% auto;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/desktop/header-bg-desktop@2x.png");
+  }
+}
+
+.page-promo__container {
+  position: relative;
+}
+
+.page-promo__content {
+  width: 55%;
+}
+
+.page-promo__title {
+  margin: 0 0 40px;
+
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.page-promo__desc {
+  position: relative;
+
+  margin-bottom: 42px;
+  padding-left: 95px;
+
+  font-size: 22px;
+  line-height: 1.5;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 15px;
+
+    width: 66px;
+    height: 2px;
+
+    background-color: $white;
+
+    content: "";
+  }
+}
+
+.page-promo__desc p {
+  margin: 0;
+
+  & + p {
+    margin-top: 15px;
+  }
+}
+
+.page-promo__advice {
+  margin-left: 95px;
+  padding: 20px 41px;
+
+  font-size: 16px;
+}
+
+.page-promo__img {
+  position: absolute;
+  top: -63px;
+  right: -50px;
+
+  &::before {
+    position: absolute;
+    top: 15px;
+    right: 84px;
+
+    width: 635px;
+    height: 637px;
+
+    background: url("../img/triangles.svg") no-repeat;
+    background-size: 635px auto;
+
+    content: "";
+  }
+}
+
+.page-promo__img img {
+  position: relative;
+  z-index: 1;
+}

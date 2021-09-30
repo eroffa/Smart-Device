@@ -1,0 +1,27 @@
+.nav ul {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav li {
+  margin-right: 88px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+
+  color: $white;
+  text-decoration: none;
+}
+
+.nav svg {
+  margin-right: 15px;
+}
