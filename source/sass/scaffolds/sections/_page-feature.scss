@@ -1,0 +1,122 @@
+.page-feature {
+  margin: 110px 0;
+}
+
+.page-feature__container {
+
+}
+
+.page-feature__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-feature__item {
+  width: 48.72%;
+  min-height: 301px;
+  margin-right: 2.5%;
+  margin-bottom: 30px;
+  padding: 40px 43px 64px;
+
+  border: 1px solid #ebebeb;
+  border-left: 3px solid $accent;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: $white;
+
+    background-color: $accent;
+  }
+}
+
+.page-feature__icon {
+  margin-bottom: 19px;
+
+  line-height: 0;
+}
+
+.page-feature__icon svg {
+  fill: $accent;
+}
+
+.page-feature__item:hover svg {
+  fill: $white;
+}
+
+.page-feature__title {
+  margin: 0 0 13px;
+
+  color: $accent;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.page-feature__item:hover .page-feature__title {
+  color: $white;
+}
+
+.page-feature__desc {
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.page-feature__desc p {
+  margin: 0;
+
+  & + * {
+    margin-top: 15px;
+  }
+}
+
+@include to($breakpoint-desktop) {
+  .page-feature {
+    margin: 55px 0;
+  }
+
+  .page-feature__item {
+    width: 48%;
+    min-height: 234px;
+    margin-right: 4%;
+    padding: 25px 20px 25px 25px;
+
+    border-left-width: 2px;
+  }
+
+  .page-feature__icon {
+    margin-bottom: 6px;
+  }
+
+  .page-feature__title {
+    margin-bottom: 8px;
+  }
+
+  .page-feature__desc {
+    line-height: 21px;
+  }
+}
+
+@include to($breakpoint-tablet) {
+  .page-feature {
+    margin: 37px 0 60px;
+  }
+
+  .page-feature__item {
+    width: 100%;
+    min-height: 100%;
+    margin: 0 0 22px;
+    padding: 25px 13px 30px 25px;
+  }
+
+  .page-feature__icon {
+    margin-bottom: 12px;
+  }
+
+  .page-feature__title {
+    font-size: 20px;
+  }
+}
