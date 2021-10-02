@@ -1,5 +1,5 @@
 .page-feature {
-  margin: 110px 0;
+  margin: 110px 0 73px;
 }
 
 .page-feature__container {
@@ -75,7 +75,7 @@
 
 @include to($breakpoint-desktop) {
   .page-feature {
-    margin: 55px 0;
+    margin: 55px 0 24px;
   }
 
   .page-feature__item {
@@ -102,18 +102,17 @@
 
 @include to($breakpoint-tablet) {
   .page-feature {
-    margin: 37px 0 60px;
+    margin: 37px 0 35px;
   }
 
   .page-feature__item {
     width: 100%;
-    min-height: 100%;
     margin: 0 0 22px;
-    padding: 25px 13px 30px 25px;
+    padding: 23px 13px 30px 25px;
   }
 
   .page-feature__icon {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .page-feature__title {

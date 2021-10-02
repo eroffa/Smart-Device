@@ -1,0 +1,150 @@
+.page-service {
+  padding: 90px 0 127px;
+
+  color: $white;
+
+  background-color: $black;
+}
+
+.page-service__container {
+
+}
+
+.page-service__title {
+  margin: 0 0 52px;
+
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.4;
+}
+
+.page-service__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-service__item {
+  position: relative;
+
+  width: 31.5%;
+  margin-right: 2.7%;
+  height: 620px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.page-service__link {
+  display: flex;
+  height: 100%;
+  padding: 50px 43px;
+
+  color: $white;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+    width: 63px;
+    height: 63px;
+
+    background: $accent url("../img/icons/icon-caret.svg") no-repeat center;
+
+    content: "";
+  }
+}
+
+.page-service__subtitle {
+  position: relative;
+  z-index: 1;
+
+  max-width: 59%;
+  margin: 0;
+
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.page-service__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.2;
+}
+
+.page-service__img img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+@include to($breakpoint-desktop) {
+  .page-service {
+    padding: 51px 0 78px;
+  }
+
+  .page-service__title {
+    width: 88%;
+    margin-bottom: 52px;
+
+    font-size: 32px;
+  }
+
+  .page-service__item {
+    width: 100%;
+    height: 256px;
+    margin: 0 0 46px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .page-service__link {
+    padding: 41px 46px;
+  }
+
+  .page-service__subtitle {
+    max-width: 27%;
+  }
+}
+
+@include to($breakpoint-tablet) {
+  .page-service {
+    padding: 50px 0 65px;
+  }
+
+  .page-service__title {
+    width: 100%;
+    margin-bottom: 42px;
+
+    font-size: 28px;
+  }
+
+  .page-service__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .page-service__link {
+    padding: 20px 26px;
+  }
+
+  .page-service__subtitle {
+    max-width: 72%;
+  }
+}
