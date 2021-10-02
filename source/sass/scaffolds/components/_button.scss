@@ -12,8 +12,11 @@
   text-align: center;
   letter-spacing: 1px;
 
+  background-color: transparent;
   border: 1px solid $accent;
   border-radius: $radius;
+
+  cursor: pointer;
 }
 
 .button--white {
