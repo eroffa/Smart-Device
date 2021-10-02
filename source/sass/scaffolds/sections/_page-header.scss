@@ -18,3 +18,9 @@
 .page-header__call {
   margin-left: 50px;
 }
+
+@include to($breakpoint-desktop) {
+  .page-header__call {
+    display: none;
+  }
+}

@@ -17,12 +17,10 @@ $offset-mobile: 15px;
 
 // Breakpoint
 $breakpoint-mobile: 320px;
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1024px;
+$breakpoint-tablet: 767px;
+$breakpoint-desktop: 1023px;
 
 // Размеры контейнера
-$width-mobile: 320px + $offset-tablet * 2;
-$width-tablet: 768px + $offset-tablet * 2;
 $width-desktop: 1170px + $offset-desktop * 2;
 
 // Ретина

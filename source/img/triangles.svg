@@ -1,9 +1,1 @@
-<svg width="632" height="487" viewBox="0 0 632 487" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path opacity="0.2" d="M626.842 5.58362L352.167 481.334L77.4921 5.58367L626.842 5.58362Z" stroke="white"/>
-<path opacity="0.2" d="M347.148 203.75L186.5 482L25.8523 203.75L347.148 203.75Z" stroke="white"/>
-<circle cx="77" cy="5" r="5" fill="white"/>
-<circle cx="26" cy="204" r="5" fill="white"/>
-<circle cx="187" cy="482" r="5" fill="white"/>
-<circle cx="352" cy="481" r="5" fill="white"/>
-<circle cx="627" cy="5" r="5" fill="white"/>
-</svg>
+<svg width="632" height="487" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M626.842 5.584l-274.675 475.75L77.492 5.584h549.35z" stroke="#fff"/><path opacity=".2" d="M347.148 203.75L186.5 482 25.852 203.75h321.296z" stroke="#fff"/><circle cx="77" cy="5" r="5" fill="#fff"/><circle cx="26" cy="204" r="5" fill="#fff"/><circle cx="187" cy="482" r="5" fill="#fff"/><circle cx="352" cy="481" r="5" fill="#fff"/><circle cx="627" cy="5" r="5" fill="#fff"/></svg>

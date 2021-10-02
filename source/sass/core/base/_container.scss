@@ -7,3 +7,15 @@
     max-width: 1480px;
   }
 }
+
+@include to($breakpoint-desktop) {
+  .container {
+    padding: 0 $offset-tablet;
+  }
+}
+
+@include to($breakpoint-tablet) {
+  .container {
+    padding: 0 $offset-mobile;
+  }
+}

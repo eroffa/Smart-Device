@@ -25,3 +25,19 @@
 .nav svg {
   margin-right: 15px;
 }
+
+@include to($breakpoint-desktop) {
+  .nav span {
+    display: none;
+  }
+
+  .nav li {
+    margin-right: 33px;
+  }
+
+  .nav svg {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+  }
+}
