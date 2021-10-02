@@ -7,7 +7,7 @@
   background: $black url("../img/desktop/header-bg-desktop@1x.png") no-repeat;
   background-size: cover;
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  @include retina {
     background-image: url("../img/desktop/header-bg-desktop@2x.png");
   }
 }

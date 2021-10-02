@@ -24,6 +24,8 @@
 
 .nav svg {
   margin-right: 15px;
+
+  fill: $accent;
 }
 
 @include to($breakpoint-desktop) {
