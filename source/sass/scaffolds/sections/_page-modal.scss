@@ -1,0 +1,116 @@
+.page-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99998;
+
+  display: none;
+
+  color: $white;
+
+  background-color: rgba(#000000, 0.5);
+
+  &--show {
+    display: block;
+  }
+}
+
+.page-modal__wrapp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 99999;
+
+  width: 490px;
+  padding: 30px 40px 45px;
+
+  color: $white;
+
+  background-color: $accent;
+
+  transform: translate(-50%, -50%);
+}
+
+.page-modal__title {
+  margin: 0 0 11px;
+
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.page-modal__desc {
+  width: 90%;
+  margin-bottom: 35px;
+
+  line-height: 1.4;
+}
+
+.page-modal__desc p {
+  margin: 0;
+
+  & + * {
+    margin-top: 15px;
+  }
+}
+
+.page-modal__form input[type="tel"],
+.page-modal__form input[type="text"],
+.page-modal__form textarea {
+  margin-bottom: 30px;
+}
+
+.page-modal__form textarea {
+  height: 104px;
+}
+
+.page-modal__form button {
+  margin-bottom: 35px;
+}
+
+.page-modal__form p label {
+  max-width: 90%;
+  padding-left: 47px;
+}
+
+.page-modal__close {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+
+  width: 23px;
+  height: 23px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $white;
+    border-radius: $radius;
+
+    transform: translateY(-50%);
+
+    content: "";
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

@@ -1,0 +1,140 @@
+.form {
+
+}
+
+.form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form input[type="text"],
+.form input[type="tel"],
+.form textarea {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 13px 16px 18px;
+
+  color: $white;
+
+  background-color: rgba($white, 0.1);
+  border: none;
+
+  &::placeholder {
+    color: $white;
+  }
+}
+
+.form textarea {
+  width: 100%;
+  height: 153px;
+}
+
+.form p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.form button {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 15px 13.51%;
+
+  color: $white;
+  font-family: $font-family-title;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+
+  background-color: transparent;
+  border: 1px solid $white;
+  border-radius: $radius;
+
+  cursor: pointer;
+}
+
+.form p label {
+  position: relative;
+
+  padding-left: 32px;
+
+  color: rgba($white, 0.8);
+  font-size: 14px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+
+    content: "";
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid $white;
+  }
+
+  &::after {
+    top: 6px;
+    left: 4px;
+
+    display: none;
+    width: 8px;
+    height: 5px;
+
+    background: url("../img/icons/icon-check.svg") no-repeat;
+    background-size: 8px 5px;
+  }
+}
+
+.form input[type="checkbox"]:checked + label {
+  &::after {
+    display: block;
+  }
+}
+
+@include to($breakpoint-desktop) {
+  .form textarea {
+    height: 158px;
+  }
+
+  .form button {
+    padding: 15px 81px;
+  }
+}
+
+@include to($breakpoint-tablet) {
+  .form input[type="text"],
+  .form input[type="tel"] {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+
+  .form textarea {
+    height: 108px;
+    margin-bottom: 30px;
+  }
+
+  .form button {
+    width: 100%;
+    margin: 0 0 31px;
+  }
+
+  .form p label {
+    width: 100%;
+  }
+}

@@ -14,6 +14,8 @@
 @import "scaffolds/components/button";
 @import "scaffolds/components/logo";
 @import "scaffolds/components/nav";
+@import "scaffolds/components/form";
+@import "scaffolds/components/social";
 
 // Секции
 @import "scaffolds/sections/page-header";
@@ -22,3 +24,5 @@
 @import "scaffolds/sections/page-about";
 @import "scaffolds/sections/page-service";
 @import "scaffolds/sections/page-feedback";
+@import "scaffolds/sections/page-footer";
+@import "scaffolds/sections/page-modal";

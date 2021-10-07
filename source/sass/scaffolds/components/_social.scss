@@ -1,0 +1,29 @@
+.social {
+
+}
+
+.social ul {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social li {
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social a {
+  display: block;
+
+  line-height: 0;
+}
+
+.social svg {
+  width: 26px;
+  height: 26px;
+}

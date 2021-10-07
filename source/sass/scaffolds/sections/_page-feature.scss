@@ -102,7 +102,7 @@
 
 @include to($breakpoint-tablet) {
   .page-feature {
-    margin: 37px 0 35px;
+    margin: 37px 0 27px;
   }
 
   .page-feature__item {
@@ -116,6 +116,8 @@
   }
 
   .page-feature__title {
+    margin-bottom: 10px;
+
     font-size: 20px;
   }
 }
