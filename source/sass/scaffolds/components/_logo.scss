@@ -17,9 +17,18 @@
   .logo {
     width: 38px;
     height: 38px;
+
+    &--footer {
+      width: 215px;
+      height: 52px;
+    }
   }
 }
 
 .social svg {
-  fill: #000;
+  fill: $black;
+}
+
+@include to($breakpoint-mobile) {
+
 }
