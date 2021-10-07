@@ -19,6 +19,8 @@
   border: 1px solid #ebebeb;
   border-left: 3px solid $accent;
 
+  transition: $transition;
+
   &:nth-child(2n) {
     margin-right: 0;
   }
@@ -67,9 +69,7 @@
 .page-feature__desc p {
   margin: 0;
 
-  & + * {
-    margin-top: 15px;
-  }
+  @include desc-p(15);
 }
 
 @include to($breakpoint-desktop) {

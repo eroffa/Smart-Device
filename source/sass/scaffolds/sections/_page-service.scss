@@ -8,10 +8,6 @@
 
 .page-service__title {
   margin: 0 0 52px;
-
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 1.4;
 }
 
 .page-service__list {
@@ -50,6 +46,8 @@
 
   cursor: pointer;
 
+  transition: $transition;
+
   &::before {
     position: absolute;
     right: 0;
@@ -62,6 +60,15 @@
     background: $accent url("../img/icons/icon-caret.svg") no-repeat center;
 
     content: "";
+
+    transition: $transition;
+  }
+}
+
+.page-service__link:hover,
+.page-service__link:focus {
+  &::before {
+    background-color: lighten($accent, 10%);
   }
 }
 
@@ -86,6 +93,13 @@
   height: 100%;
 
   opacity: 0.2;
+
+  transition: $transition;
+}
+
+.page-service__link:hover .page-service__img,
+.page-service__link:focus .page-service__img {
+  transform: scale(1.05);
 }
 
 .page-service__img img {
@@ -103,8 +117,6 @@
   .page-service__title {
     width: 88%;
     margin-bottom: 52px;
-
-    font-size: 32px;
   }
 
   .page-service__item {
@@ -134,8 +146,6 @@
   .page-service__title {
     width: 100%;
     margin-bottom: 42px;
-
-    font-size: 28px;
   }
 
   .page-service__item {

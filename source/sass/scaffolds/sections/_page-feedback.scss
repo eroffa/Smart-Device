@@ -61,10 +61,6 @@
 
 .page-feedback__title {
   margin: 0 0 7px;
-
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 1.4;
 }
 
 .page-feedback__desc {
@@ -75,9 +71,7 @@
 .page-feedback__desc p {
   margin: 0;
 
-  & + * {
-    margin-top: 15px;
-  }
+  @include desc-p(15);
 }
 
 .page-feedback__form {
@@ -127,8 +121,6 @@
 
   .page-feedback__title {
     margin-bottom: 17px;
-
-    font-size: 32px;
   }
 
   .page-feedback__desc {
@@ -169,8 +161,6 @@
 
   .page-feedback__title {
     margin-bottom: 14px;
-
-    font-size: 28px;
   }
 
   .page-feedback__desc {

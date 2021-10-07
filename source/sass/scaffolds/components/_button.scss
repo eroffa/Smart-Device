@@ -17,12 +17,30 @@
   border-radius: $radius;
 
   cursor: pointer;
+
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    color: $white;
+
+    background-color: $accent;
+    border-color: $accent;
+  }
 }
 
 .button--white {
   color: $white;
 
   border: 1px solid $white;
+
+  &:hover,
+  &:focus {
+    color: $white;
+
+    background-color: $accent;
+    border-color: $accent;
+  }
 }
 
 .button--fill {
@@ -30,4 +48,11 @@
 
   background-color: $accent;
   border: none;
+
+  &:hover,
+  &:focus {
+    color: $white;
+
+    background-color: lighten($accent, 10%);
+  }
 }

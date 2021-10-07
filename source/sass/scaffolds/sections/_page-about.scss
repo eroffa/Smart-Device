@@ -30,10 +30,6 @@
 
 .page-about__title {
   margin: 0 0 23px;
-
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 1.4;
 }
 
 .page-about__desc {
@@ -46,9 +42,7 @@
 .page-about__desc p {
   margin: 0;
 
-  & + * {
-    margin-top: 24px;
-  }
+  @include desc-p(24);
 }
 
 .page-about__more {
@@ -83,8 +77,6 @@
 
   .page-about__title {
     margin-bottom: 27px;
-
-    font-size: 32px;
   }
 
   .page-about__desc {
@@ -93,10 +85,10 @@
     max-height: 192px;
     overflow: hidden;
     margin-bottom: 44px;
-  }
 
-  .page-about__desc p + * {
-    margin-top: 28px;
+    line-height: 21px;
+
+    @include desc-p(28);
   }
 }
 
@@ -115,18 +107,14 @@
 
   .page-about__title {
     margin-bottom: 23px;
-
-    font-size: 28px;
   }
 
   .page-about__desc {
-    max-height: 335px;
-    margin-bottom: 40px;
+    max-height: 340px;
+    margin-bottom: 36px;
 
     line-height: 1.37;
-  }
 
-  .page-about__desc p + * {
-    margin-top: 45px;
+    @include desc-p(45);
   }
 }

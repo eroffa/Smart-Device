@@ -51,9 +51,7 @@
 .page-modal__desc p {
   margin: 0;
 
-  & + * {
-    margin-top: 15px;
-  }
+  @include desc-p(15);
 }
 
 .page-modal__form input[type="tel"],
@@ -104,6 +102,8 @@
     transform: translateY(-50%);
 
     content: "";
+
+    transition: $transition;
   }
 
   &::before {
@@ -112,5 +112,13 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+}
+
+.page-modal__close:hover,
+.page-modal__close:focus {
+  &::before,
+  &::after {
+    height: 2px;
   }
 }

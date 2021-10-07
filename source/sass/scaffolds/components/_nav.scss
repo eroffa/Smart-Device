@@ -20,6 +20,11 @@
 
   color: $white;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 .nav svg {
@@ -36,12 +41,18 @@
   }
 
   .nav li {
-    margin-right: 26px;
+    margin-right: 33px;
   }
 
   .nav svg {
     width: 24px;
     height: 24px;
     margin: 0;
+  }
+}
+
+@include to($breakpoint-desktop) {
+  .nav li {
+    margin-right: 27px;
   }
 }

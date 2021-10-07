@@ -32,3 +32,9 @@
     @content;
   }
 }
+
+@mixin desc-p($val: 15) {
+  & + p {
+    margin-top: #{$val}px;
+  }
+}

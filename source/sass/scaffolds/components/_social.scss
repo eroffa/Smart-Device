@@ -22,4 +22,11 @@
 .social svg {
   width: 26px;
   height: 26px;
+
+  transition: $transition;
+}
+
+.social a:hover svg,
+.social a:focus svg {
+  opacity: 0.5;
 }

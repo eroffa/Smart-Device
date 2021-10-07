@@ -103,6 +103,11 @@
   font-size: 15px;
   line-height: 25px;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 .page-footer__widget-wrapp {
@@ -158,6 +163,11 @@
 
   &--dev {
     margin-left: auto;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
   }
 }
 
