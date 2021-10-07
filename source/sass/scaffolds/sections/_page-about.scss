@@ -2,10 +2,6 @@
   margin: 73px 0 110px;
 }
 
-.page-about__container {
-
-}
-
 .page-about__wrapp {
   position: relative;
 
@@ -19,14 +15,14 @@
     width: 115px;
     height: 305px;
 
-    background: url("../img/desktop/year-desktop@1x.png") no-repeat;
+    background: url("../img/desktop/year-desktop@1x.webp") no-repeat;
 
     content: "";
   }
 
   @include retina {
     &::before {
-      background-image: url("../img/desktop/year-desktop@2x.png");
+      background-image: url("../img/desktop/year-desktop@2x.webp");
       background-size: 115px 305px;
     }
   }
@@ -74,12 +70,12 @@
       width: 131px;
       height: 347px;
 
-      background-image: url("../img/tablet/year-tablet@1x.png");
+      background-image: url("../img/tablet/year-tablet@1x.webp");
     }
 
     @include retina {
       &::before {
-        background-image: url("../img/tablet/year-tablet@2x.png");
+        background-image: url("../img/tablet/year-tablet@2x.webp");
         background-size: 131px 347px;
       }
     }

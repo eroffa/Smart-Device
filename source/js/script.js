@@ -2,6 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
+  var iMask = window.IMask;
   var callButton = document.querySelector('.page-header__call');
   var modal = document.querySelector('.page-modal');
   var modalWrapp = document.querySelector('.page-modal__wrapp');
@@ -84,15 +85,15 @@ document.addEventListener('DOMContentLoaded', function () {
           item.nextElementSibling.classList.remove('page-footer__widget--show');
         }
 
-        item.classList.add('page-footer__widget--show');
+        item.classList.toggle('page-footer__widget--show');
       });
     });
   }
 
   // Валидация телефона
-  // IMask - хранится в vendor.js
+  // iMask - хранится в vendor.js
   tel.forEach(function (item) {
-    IMask(item, {mask: '+{7} 000 000 00 00'});
+    iMask(item, {mask: '+{7} 000 000 00 00'});
   });
 
   // Модальное окно обратной связи

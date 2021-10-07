@@ -2,10 +2,6 @@
   margin: 110px 0 73px;
 }
 
-.page-feature__container {
-
-}
-
 .page-feature__list {
   @include list-reset;
 
@@ -41,6 +37,9 @@
 }
 
 .page-feature__icon svg {
+  width: 35px;
+  height: 35px;
+
   fill: $accent;
 }
 

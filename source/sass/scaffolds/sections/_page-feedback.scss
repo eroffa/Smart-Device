@@ -44,7 +44,7 @@
     width: 635px;
     height: 637px;
 
-    background: url(../img/triangles.svg) no-repeat;
+    background: url("../img/triangles.svg") no-repeat;
     background-size: 630px auto;
 
     content: "";
@@ -191,10 +191,6 @@
 
   .page-feedback__form textarea {
     margin-bottom: 27px;
-  }
-
-  .page-feedback__form button {
-
   }
 
   .page-feedback__form p label {

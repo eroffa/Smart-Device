@@ -51,6 +51,8 @@
     "node": "8.15"
   },
   "dependencies": {
-    "del": "^4.1.1"
+    "critical": "^4.0.1",
+    "del": "^4.1.1",
+    "gulp-tap": "^2.0.0"
   }
 }

@@ -19,21 +19,14 @@
 }
 
 .page-footer__top-right {
+  display: flex;
+  flex-wrap: wrap;
   width: 70%;
   margin-left: auto;
 }
 
 .page-footer__logo {
   margin-bottom: 53px;
-}
-
-.page-footer__social {
-
-}
-
-.page-footer__top-right {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .page-footer__widget {
@@ -230,13 +223,14 @@
   }
 }
 
-@include to($breakpoint-mobile) {
+@include to($breakpoint-tablet) {
   .page-footer__top {
     border: none;
   }
 
   .page-footer__top-left {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 46px $offset-tablet 53px;
   }

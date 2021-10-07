@@ -98,5 +98,48 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+var critical = require("critical");
+var tap = require("gulp-tap");
+var path = require("path");
+
+var page = '';
+var crList = {
+
+};
+
+gulp.task("critical", function () {
+  return gulp.src('source/index.html')
+  .pipe(tap(function(file, t) {
+    page = path.parse(file.path).name;
+
+    return t.through(critical.stream, [{
+      base: 'build',
+      css: ['css/style.min.css'],
+      // target: {
+      //   css: `css/critical/${page}-critical.css`,
+      //   uncritical: `css/async/${page}-async.css`,
+      // },
+      width: 1480,
+      height: 720,
+      include: [],
+      ignore: {
+        rule: [
+          /js-/
+        ],
+        decl: (node, value) => {
+          // node.parent.selector - оригинальный селектор
+          // node.prop - свойства селектора
+          if (!(node.parent.selector in crList)) {
+            return false;
+          }
+
+          return !crList[selector].includes(node.prop);
+        },
+      }
+    }])
+  }))
+  .pipe(gulp.dest('build/css'));
+});
+
 gulp.task("build", gulp.series("clean", "images", "webp", "copy", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

@@ -4,11 +4,11 @@
 
   color: $white;
 
-  background: $black url("../img/desktop/header-bg-desktop@1x.png") no-repeat;
+  background: $black url("../img/desktop/header-bg-desktop@1x.webp") no-repeat;
   background-size: cover;
 
   @include retina {
-    background-image: url("../img/desktop/header-bg-desktop@2x.png");
+    background-image: url("../img/desktop/header-bg-desktop@2x.webp");
   }
 }
 
@@ -24,6 +24,8 @@
 }
 
 .page-promo__title {
+  max-height: 170px;
+  overflow: hidden;
   margin: 0 0 40px;
 
   font-weight: bold;
@@ -36,8 +38,10 @@
 .page-promo__desc {
   position: relative;
 
+  max-height: 230px;
   margin-bottom: 42px;
   padding-left: 95px;
+  overflow: hidden;
 
   font-size: 22px;
   line-height: 1.5;

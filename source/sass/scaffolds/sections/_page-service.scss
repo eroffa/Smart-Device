@@ -6,10 +6,6 @@
   background-color: $black;
 }
 
-.page-service__container {
-
-}
-
 .page-service__title {
   margin: 0 0 52px;
 
@@ -28,12 +24,17 @@
 .page-service__item {
   position: relative;
 
+  display: none;
   width: 31.5%;
   margin-right: 2.7%;
   height: 620px;
 
   &:nth-child(3n) {
     margin-right: 0;
+  }
+
+  &:nth-child(-n+3) {
+    display: block;
   }
 }
 
@@ -44,6 +45,8 @@
 
   color: $white;
   text-decoration: none;
+
+  background-color: rgba($white, 0.2);
 
   cursor: pointer;
 
