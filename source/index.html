@@ -185,7 +185,7 @@
                 <div class="page-feature__desc">
                   <p>
                     Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее
-                    качество нашей.
+                    качество нашей продукции.
                   </p>
                 </div>
               </li>
@@ -297,7 +297,7 @@
           </div>
         </section>
 
-        <section class="page-feedback">
+        <section id="feedback" class="page-feedback">
           <div class="page-feedback__container container">
             <div class="page-feedback__img">
               <picture>
@@ -339,7 +339,7 @@
       </main>
     </div>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--nojs">
       <div class="page-footer__top">
         <div class="page-footer__top-container container container--big">
           <div class="page-footer__top-left">
@@ -409,7 +409,7 @@
                 </ul>
               </div>
             </div>
-            <address class="page-footer__widget page-footer__widget--show">
+            <address class="page-footer__widget">
               <b>Наш офис</b>
               <button type="button" aria-label="Показать меню"></button>
               <div class="page-footer__widget-wrapp">
@@ -435,7 +435,7 @@
       </div>
     </footer>
 
-    <section class="page-modal page-modal--show1">
+    <section class="page-modal">
       <div class="page-modal__wrapp">
         <h2 class="page-modal__title">Закажите звонок</h2>
         <div class="page-modal__desc">
@@ -450,7 +450,7 @@
             <input id="modal-phone" type="tel" name="phone" placeholder="Телефон" required />
 
             <label class="sr-only" for="modal-message">Ваш вопрос</label>
-            <textarea id="modal-message" name="message" cols="30" rows="10">Ваш вопрос</textarea>
+            <textarea id="modal-message" name="message" cols="30" rows="10" placeholder="Ваш вопрос" required></textarea>
 
             <p>
               <button type="submit">Отправить</button>
@@ -463,5 +463,8 @@
         <button class="page-modal__close" aria-label="Закрыть"></button>
       </div>
     </section>
+
+    <script src="/js/vendor.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>

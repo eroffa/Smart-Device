@@ -58,3 +58,7 @@ h5,
 h6 {
   font-family: $font-family-title;
 }
+
+.no-scroll {
+  overflow-y: hidden;
+}
