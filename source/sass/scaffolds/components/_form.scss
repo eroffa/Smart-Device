@@ -35,7 +35,7 @@
   height: 153px;
 }
 
-.form p {
+.form__buttons {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -58,6 +58,7 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1px;
+  vertical-align: top;
 
   background-color: transparent;
   border: 1px solid $white;
@@ -75,7 +76,7 @@
   }
 }
 
-.form p label {
+.form__buttons label {
   position: relative;
 
   padding-left: 32px;
@@ -116,8 +117,8 @@
   }
 }
 
-.form p label:hover,
-.form p label:focus {
+.form__buttons label:hover,
+.form__buttons label:focus {
   font-weight: bold;
 }
 
@@ -125,6 +126,15 @@
   &::after {
     display: block;
   }
+}
+
+.form__buttons--feedback label {
+  width: 40%;
+}
+
+.form__buttons--modal label {
+  max-width: 90%;
+  padding-left: 47px;
 }
 
 @include to($breakpoint-desktop) {
@@ -154,7 +164,7 @@
     margin: 0 0 31px;
   }
 
-  .form p label {
+  .form__buttons label {
     width: 100%;
   }
 }

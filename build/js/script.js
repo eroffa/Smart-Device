@@ -10,32 +10,23 @@ document.addEventListener('DOMContentLoaded', function () {
   var form = document.querySelectorAll('.form form');
   var adviceButton = document.querySelector('.page-promo__advice');
   var widget = document.querySelectorAll('.page-footer__widget');
-  var footer = document.querySelector('.page-footer');
   var tel = document.querySelectorAll('input[type="tel"]');
-
-  footer.classList.remove('page-footer--nojs');
 
   // Клик по кнопке "Заказать звонок"
   if (callButton) {
-    callButton.addEventListener('click', feedbackModal);
+    callButton.addEventListener('click', feedModal);
   }
 
   // Закрытие модального окна
   if (modal) {
-    window.addEventListener('keydown', function (evt) {
-      if (evt.keyCode === 27) {
-        feedbackModal(evt);
-      }
-    });
-
-    modalButtonClose.addEventListener('click', feedbackModal);
+    modalButtonClose.addEventListener('click', feedModal);
 
     modal.addEventListener('click', function (evt) {
       var target = evt.target;
       var its = target === modalWrapp || modalWrapp.contains(target);
 
       if (!its) {
-        feedbackModal(evt);
+        feedModal(evt);
       }
     });
   }
@@ -73,8 +64,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Аккордеон в подвале
   if (widget) {
+
     widget.forEach(function (item) {
       var widgetButton = item.querySelector('button');
+
+      item.classList.remove('page-footer__widget--nojs');
 
       widgetButton.addEventListener('click', function () {
         if (item.previousElementSibling) {
@@ -97,8 +91,14 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Модальное окно обратной связи
-  function feedbackModal(evt) {
+  function feedModal(evt) {
     evt.preventDefault();
+
+    window.addEventListener('keydown', function (evt) {
+      if (evt.keyCode === 27) {
+        feedModal(evt);
+      }
+    });
 
     document.body.classList.toggle('no-scroll');
     modal.classList.toggle('page-modal--show');

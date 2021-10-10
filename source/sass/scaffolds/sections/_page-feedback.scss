@@ -97,10 +97,6 @@
   margin: 0 7% 0 0;
 }
 
-.page-feedback__form p label {
-  width: 40%;
-}
-
 @include to($breakpoint-desktop) {
   .page-feedback {
     padding: 78px 0 103px;
@@ -181,9 +177,5 @@
 
   .page-feedback__form textarea {
     margin-bottom: 27px;
-  }
-
-  .page-feedback__form p label {
-    width: 100%;
   }
 }

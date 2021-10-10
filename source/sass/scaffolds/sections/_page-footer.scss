@@ -116,7 +116,7 @@
   align-items: flex-start;
 }
 
-.page-footer__widget--left .page-footer__widget-wrapp ul {
+.page-footer__widget-wrapp--menu ul {
   width: 50%;
   margin-right: 12%;
 
@@ -219,7 +219,7 @@
     }
   }
 
-  .page-footer__widget--left .page-footer__widget-wrapp ul {
+  .page-footer__widget-wrapp--menu ul {
     width: 100%;
     margin: 0;
   }
@@ -295,7 +295,7 @@
     margin-top: 36px;
   }
 
-  .page-footer--nojs .page-footer__widget-wrapp,
+  .page-footer__widget--nojs .page-footer__widget-wrapp,
   .page-footer__widget--show .page-footer__widget-wrapp {
     display: block;
   }
@@ -306,7 +306,7 @@
     }
   }
 
-  .page-footer--nojs .page-footer__widget button {
+  .page-footer__widget--nojs button {
     display: none;
   }
 

@@ -68,11 +68,6 @@
   margin-bottom: 35px;
 }
 
-.page-modal__form p label {
-  max-width: 90%;
-  padding-left: 47px;
-}
-
 .page-modal__close {
   position: absolute;
   top: 15px;
@@ -120,5 +115,11 @@
   &::before,
   &::after {
     height: 2px;
+  }
+}
+
+@include to($breakpoint-tablet) {
+  .page-modal__wrapp {
+    width: 80%;
   }
 }
